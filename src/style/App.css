@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono:wght@300&display=swap");
+html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-root {
+  outline: none;
+  background-color: #ff8989;
+  width: 60%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel .slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+.carousel .slide {
+  min-width: 100%;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 80%;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel .control-dots .dot {
+  -webkit-transition: opacity .25s ease-in;
+  transition: opacity .25s ease-in;
+  opacity: .1;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: black;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  opacity: .6;
+}
+
+.carousel .carousel-status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  opacity: .4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  background: none;
+  border: 0;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  margin: 0 5px;
+  display: inline-block;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  content: '';
+  background-color: black;
+}
+
+.carousel .control-disabled.control-arrow {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: inherit;
+  display: none;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 0;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+}
+
+.carousel .control-next.control-arrow {
+  right: 0;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  height: 80vh;
+}
+/*# sourceMappingURL=App.css.map */
